@@ -1,3 +1,11 @@
 PORT=8000
 MONGO_URI= mongodb+srv://saiprasad22010642:Saiprasad%402412@youtuvecluster.hykautx.mongodb.net
 CORS_ORIGIN=*
+ACCESS_TOKEN_SECRET=gojoreghrnvorghreng_fjoofrhnbg854_ f7843qonhuf_v84tvn8crnctnh_-2hng87
+ACCESS_TOKEN_EXPIRY=1d
+REFRESH_TOKEN_SECRET=984_vnfv8v9h4u_vnr4n_bmv98uvt593fcmy258wr
+REFRESH_TOKEN_EXPIRY=10d
+
+CLOUDINARY_CLOUD_NAME=dasbojjlj
+CLOUDINARY_API_KEY=429311528657995
+CLOUDINARY_API_SECRET=sIEzq83nhxdQWEN1_KO07QghtsA

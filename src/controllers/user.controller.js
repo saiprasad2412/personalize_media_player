@@ -107,7 +107,16 @@ const loginUser =asyncHandler(async(req,res)=>{
   
 }) 
 const logOutUser = asyncHandler(async(req, res)=>{
-  await User.findByIdAndUpdate(req.user._id, {refreshToken: undefined})
+  await User
+  .findByIdAndUpdate(
+    req.user._id,
+    {
+      $unset:{
+        refreshToken:1 //this remove field from the document
+      }
+    },{
+      new:true
+    })
   const options={
     httpOnly:true,
     secure:true
